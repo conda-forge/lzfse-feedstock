@@ -12,16 +12,14 @@ source:
   sha256: {{ sha256hash }}
 
 build:
-  number: 0
-  skip: True  # [win and not py35]
-  features:
-    - vc14  # [win and py35]
+  number: 1
+  skip: True  # [win and vc<14]
 
 requirements:
   build:
-    - toolchain   # [unix]
-    - python      # [win]
     - cmake
+    - {{ compiler('c') }}
+  host:
 
 test:
   requires:
