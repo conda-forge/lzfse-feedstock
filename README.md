@@ -19,7 +19,7 @@ Current build status
 
 [![Linux](https://img.shields.io/circleci/project/github/conda-forge/lzfse-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/lzfse-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/lzfse-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/lzfse-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/lzfse-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/lzfse-feedstock/branch/master)
 
 Current release info
 ====================
