@@ -22,9 +22,6 @@ requirements:
   host:
 
 test:
-  requires:
-    - python  # [win]
-
   commands:
     - {{ name }} -h
 
