@@ -33,9 +33,6 @@ test:
     - if not exist %LIBRARY_LIB%\\{{ name }}.lib exit 1  # [win]
     - if not exist %LIBRARY_INC%\\{{ name }}.h exit 1   # [win]
 
-    - conda inspect linkages {{ name }}  # [unix]
-    - conda inspect objects {{ name }}   # [osx]
-
 about:
   home: https://github.com/lzfse/lzfse
   license: BSD 3-Clause
