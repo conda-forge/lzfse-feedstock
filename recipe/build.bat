@@ -14,6 +14,8 @@ cmake -S . -B build ^
 cmake --build build --config Release -j%CPU_COUNT% || goto :error
 cmake --install build --config Release || goto :error
 
+goto :eof
+
 :error
 echo Failed with error #%errorlevel%.
 exit 1
