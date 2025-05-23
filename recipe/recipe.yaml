@@ -29,9 +29,9 @@ tests:
         - test -f ${PREFIX}/lib/liblzfse${SHLIB_EXT}
     - if: win
       then:
-        - if not exist %LIBRARY_LIB%\\${{ name }}.dll exit 1
-        - if not exist %LIBRARY_LIB%\\${{ name }}.lib exit 1
-        - if not exist %LIBRARY_INC%\\${{ name }}.h exit 1
+        - if not exist %LIBRARY_PREFIX%\bin\lzfse.dll exit 1
+        - if not exist %LIBRARY_PREFIX%\lib\lzfse.lib exit 1
+        - if not exist %LIBRARY_PREFIX%\include\lzfse.h exit 1
 
 about:
   license: BSD-3-Clause
