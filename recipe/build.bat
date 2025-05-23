@@ -11,8 +11,8 @@ cmake -S . -B build ^
     -DLZFSE_BUNDLE_MODE=OFF ^
     %CMAKE_ARGS% || goto :error
 
-cmake --build build -j%CPU_COUNT% || goto :error
-cmake --install build || goto :error
+cmake --build build --config Release -j%CPU_COUNT% || goto :error
+cmake --install build --config Release || goto :error
 
 :error
 echo Failed with error #%errorlevel%.
